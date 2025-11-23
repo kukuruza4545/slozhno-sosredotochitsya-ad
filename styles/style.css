@@ -2,4 +2,57 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: 'IBM Plex Mono';
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/cover-image-dark.png");
+  gap: 50px;
+
+  
+}
+
+.header__theme-menu {
+  align-self: flex-end;
+  color: var(--nav-text-color); 
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 0 13px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.header__title {
+  color: var(--h1-text-color);
+  text-shadow: 4px 4px var(--h1-shadow-color);
+  text-align: left;
+  font-size: 116px;
+  font-weight: 700;
+}
+
+.header__description {
+  background-color: var(--header-description-bg-color);    
+  color: var(--h2-text-color);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+
+  margin: 0 10px 66px;
+}
+
+.header::after {
+  content: "REC";
+  
 }

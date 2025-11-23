@@ -2,3 +2,11 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --h1-text-color: #DB00FF;
+  --h1-shadow-color: #FF0070;
+  --header-description-bg-color: #FF0070;
+  --h2-text-color: #000028;
+  --nav-text-color: #FF0070;
+  
+}
