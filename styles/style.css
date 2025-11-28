@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   font-family: 'IBM Plex Mono';
-  background-color: #000028;
+  background-color: var(--page-bg-color);
   display: flex;
   flex-direction: column; 
   /* grid-template-columns: 1fr; */
@@ -47,7 +47,6 @@
   text-align: left;
   font-size: 116px;
   font-weight: 700;
-  border: 4px solid white;
   padding: 0;
 }
 
@@ -65,7 +64,7 @@
   position: absolute;
   right: 38px;
   top: 10px;
-  color: var(--upper-text-color);
+  color: var(--rec-color);
   width: 33px;
   height: 26px;
 }
@@ -75,8 +74,8 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  border-top: 1px solid var(--header-desc-bg-color);
-  border-right: 1px solid var(--header-desc-bg-color);
+  border-top: 1px solid var(--decoration-color);
+  border-right: 1px solid var(--decoration-color);
   width: 25px;
   height: 25px;
 }
@@ -86,8 +85,8 @@
   position: absolute;
   left: 10px;
   bottom: 10px;
-  border-bottom: 1px solid var(--header-desc-bg-color);
-  border-left: 1px solid var(--header-desc-bg-color);
+  border-bottom: 1px solid var(--decoration-color);
+  border-left: 1px solid var(--decoration-color);
   width: 25px;
   height: 25px; 
 }
@@ -105,11 +104,18 @@
 
 .question {
   color: var(--upper-text-color);
+  font-size: 18px;
+}
+
+.last-question {
+  color: var(--answer-title-text-color);
+  background-color: var(--answer-title-bg-color);
 }
 
 .answer__title {
   background-color: var(--answer-title-bg-color);
   color: var(--answer-title-text-color);
+  height: fit-content;
 }
 
 .section {
@@ -121,6 +127,11 @@
 .answer {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.answers {
+  display: grid;
   gap: 10px;
 }
 
@@ -162,8 +173,8 @@
 }
 
 .image-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
@@ -186,8 +197,8 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  border-top: 1px solid var(--header-desc-bg-color);
-  border-right: 1px solid var(--header-desc-bg-color);
+  border-top: 1px solid var(--decoration-color);
+  border-right: 1px solid var(--decoration-color);
   width: 25px;
   height: 25px;
 }
@@ -197,19 +208,94 @@
   position: absolute;
   left: 10px;
   bottom: 10px;
-  border-bottom: 1px solid var(--header-desc-bg-color);
-  border-left: 1px solid var(--header-desc-bg-color);
+  border-bottom: 1px solid var(--decoration-color);
+  border-left: 1px solid var(--decoration-color);
   width: 25px;
   height: 25px; 
 }
 
-@media (width >= 376px) and (width <= 768px)  {
+.header__theme-menu-button:hover {
+  border: 1px solid var(--button-hover-border-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;  
+  border: none;
+  border-bottom: 1px solid var(--button-hover-border-color);
+}
+
+.reference:hover {
+  text-decoration: underline;
+}
+
+.reference:focus {
+  border: 1px solid var(--main-text-color);
+}
+
+
+@media (width >= 376px) {
+  .section:nth-child(2n + 1) {
+    grid-template-columns: 1fr 2fr;
+    
+  }
+
   .header__description {
     width: 50%;
     align-self: flex-end;
   }
 
-  .section {
-    grid-template-columns: 1fr 1fr;
+  .image-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 3fr;
+    grid-template-areas: 
+    "img1 img1 img2"
+    "img3 img4 img2"
+    "img3 img5 img5";
+    
+  }
+
+  .image-container li:nth-child(1) {
+    grid-area: img1;
+  }
+  .image-container li:nth-child(2) {
+    grid-area: img2;
+  }
+  .image-container li:nth-child(3) {
+    grid-area: img3;
+  }
+  .image-container li:nth-child(4) {
+    grid-area: img4;
+  }
+  .image-container li:nth-child(5) {
+    grid-area: img5;
+  }
+
+  .img {
+    height: 100%;
+    object-fit: cover;
   }
 }
+
+@media (width > 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__theme-menu {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .section:nth-child(2n) {
+    grid-template-columns: 1fr;
+  }
+
+  .section:nth-child(2n) .answers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
