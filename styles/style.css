@@ -51,6 +51,7 @@
   font-size: 116px;
   font-weight: 700;
   padding: 0;
+  line-height: 83%;
 }
 
 .header__description {
@@ -245,12 +246,13 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  
 }
 
 
 
 
-@media (width >= 376px) {
+@media (width > 376px) {
   .main {
     gap: 80px;
   }
@@ -314,7 +316,7 @@
     "img3 img4 img2"
     "img3 img5 img5";
 
-    min-block-size: 1048px;
+    min-block-size: 780px;
     max-block-size: 1048px;
     gap: 20px;
     
