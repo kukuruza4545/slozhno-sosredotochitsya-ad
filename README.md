@@ -1,1 +1,1 @@
-задание "сложно сосредоточится" от яндекс практикум
+https://github.com/kukuruza4545/slozhno-sosredotochitsya-ad
