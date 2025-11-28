@@ -9,6 +9,7 @@
   /* grid-template-columns: 1fr; */
   gap: 40px;
   background-attachment: fixed;
+  line-height: 23.4px;
 }
 
 .header {
@@ -58,6 +59,7 @@
   font-size: 18px;
   font-weight: 700;
   margin: 0 10px 66px;
+  
 }
 
 .header::after {
@@ -101,6 +103,7 @@
 
 .answer__description {
   color: var(--main-text-color);
+  
 }
 
 .question {
@@ -233,6 +236,15 @@
   border: 1px solid var(--main-text-color);
 }
 
+.header .main-title {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
 
 @media (width >= 376px) {
   .main-title {
@@ -281,6 +293,8 @@
   .header__description {
     width: 50%;
     align-self: flex-end;
+    
+    padding: 0;
   }
 
   .image-container {
