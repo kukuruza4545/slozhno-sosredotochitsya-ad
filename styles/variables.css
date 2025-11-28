@@ -5,8 +5,12 @@
 :root {
   --h1-text-color: #DB00FF;
   --h1-shadow-color: #FF0070;
-  --header-description-bg-color: #FF0070;
-  --h2-text-color: #000028;
-  --nav-text-color: #FF0070;
-  
+  --header-desc-text-color: #000028;
+  --header-desc-bg-color: #FF0070;;
+  --upper-text-color: #FF0070;
+  --page-bg-color: #000028;
+  --main-text-color: #F1B2CE;
+
+  --answer-title-text-color: #000028;
+  --answer-title-bg-color: #FF0070;
 }
