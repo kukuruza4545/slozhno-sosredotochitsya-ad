@@ -235,6 +235,10 @@
 
 
 @media (width >= 376px) {
+  .main-title {
+    font-size: 120px;
+  }
+
   .section:nth-child(2n + 1) {
     grid-template-columns: 1fr 2fr;
     
@@ -278,6 +282,10 @@
 }
 
 @media (width > 768px) {
+  .main-title {
+    font-size: 157px;
+  }
+
   .header {
     justify-content: space-between;
   }
