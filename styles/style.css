@@ -253,6 +253,13 @@
 
 
 @media (width > 376px) {
+  
+
+  .section:nth-child(2n):not(:last-child) .question {
+    inline-size: 30%; 
+    border: 1px solid white;
+  }
+
   .header {
     justify-content: space-around;
   }
@@ -370,9 +377,7 @@
     grid-template-columns: 1fr;
   }
 
-  .section:nth-child(2n):not(:last-child) .question {
-    inline-size: 33%; 
-  }
+  
 
   .section:nth-child(2n) .answers {
     grid-template-columns: 1fr 1fr 1fr;
