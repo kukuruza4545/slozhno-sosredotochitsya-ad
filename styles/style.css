@@ -10,6 +10,7 @@
   gap: 40px;
   background-attachment: fixed;
   line-height: 23.4px;
+  font-size: 18px;
 }
 
 .header {
@@ -103,7 +104,6 @@
 
 .answer__description {
   color: var(--main-text-color);
-  
 }
 
 .question {
