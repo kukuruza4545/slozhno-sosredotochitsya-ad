@@ -315,6 +315,7 @@
     "img3 img5 img5";
 
     min-block-size: 1048px;
+    max-block-size: 1048px;
     gap: 20px;
     
   }
