@@ -239,6 +239,40 @@
     font-size: 120px;
   }
 
+  .header {
+    padding: 20px;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .header::after {
+    right: 48px;
+    top: 20px;
+  }
+
+  .header::before {
+    right: 20px;
+    top: 20px;
+  }
+
+  .header__description::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .footer::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .footer::before {
+    right: 20px;
+    top: 20px;
+  }
+
+
   .section:nth-child(2n + 1) {
     grid-template-columns: 1fr 2fr;
     
@@ -285,6 +319,7 @@
   .main-title {
     font-size: 157px;
   }
+
 
   .header {
     justify-content: space-between;
