@@ -114,6 +114,8 @@
 .last-question {
   color: var(--answer-title-text-color);
   background-color: var(--answer-title-bg-color);
+  
+  
 }
 
 .answer__title {
@@ -288,6 +290,7 @@
   .footer::before {
     right: 20px;
     top: 20px;
+    position: absolute;
   }
 
 
@@ -310,6 +313,9 @@
     "img1 img1 img2"
     "img3 img4 img2"
     "img3 img5 img5";
+
+    min-block-size: 1048px;
+    gap: 20px;
     
   }
 
@@ -358,7 +364,7 @@
     grid-template-columns: 1fr;
   }
 
-  .section:nth-child(2n) .question {
+  .section:nth-child(2n):not(:last-child) .question {
     inline-size: 33%; 
   }
 
