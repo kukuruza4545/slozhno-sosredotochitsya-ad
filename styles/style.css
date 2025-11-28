@@ -16,7 +16,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/cover-image-dark.png");
+  background-image: url("../images/cover-image-light.png");
   gap: 50px;
   padding: 10px;
   position: relative;

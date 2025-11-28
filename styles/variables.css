@@ -3,20 +3,20 @@
   и их переопределение под различные устройства
 */
 :root {
-  --page-bg-color: #000028;
-
-  --h1-text-color: #DB00FF;
-  --h1-shadow-color: #FF0070;
+  --h1-text-color: #FFC2E6;
+  
+  --h1-shadow-color: #FF8DCB;
   --header-desc-text-color: #000028;
-  --header-desc-bg-color: #FF0070;
-  --upper-text-color: #FF0070;
-  --page-bg-color: #000028;
-  --main-text-color: #F1B2CE;
+  --header-desc-bg-color: #FF8DCB;
+  --upper-text-color: #353430;
+  --page-bg-color: #FFF1F7;
+  --main-text-color: #353430;
+;
 
-  --answer-title-text-color: #000028;
-  --answer-title-bg-color: #FF0070;
-  --button-hover-border-color: #FF007066;
+  --answer-title-text-color: #353430;
+  --answer-title-bg-color: #FF8DCB;
+  --button-hover-border-color: #32312D66;
 
-  --rec-color: #FF0070;
-  --decoration-color: #FF0070;
+  --rec-color: transparent;
+  --decoration-color: #353430;
 }
