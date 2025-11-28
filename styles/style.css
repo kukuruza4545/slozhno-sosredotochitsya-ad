@@ -131,7 +131,9 @@
 .answer {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   gap: 10px;
+  align-items: start;
 }
 
 .answers {
@@ -247,6 +249,10 @@
 
 
 @media (width >= 376px) {
+  .main {
+    gap: 80px;
+  }
+
   .main-title {
     font-size: 120px;
   }
@@ -350,6 +356,10 @@
 
   .section:nth-child(2n) {
     grid-template-columns: 1fr;
+  }
+
+  .section:nth-child(2n) .question {
+    inline-size: 33%; 
   }
 
   .section:nth-child(2n) .answers {
